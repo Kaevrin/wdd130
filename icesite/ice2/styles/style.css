@@ -1,0 +1,22 @@
+body {
+    background-color: grey;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.hero {
+    width: 100%;
+}
+
+.imagebox {
+    max-width: 100%;
+    text-align: center;
+}
+
+.circledisplay {
+    border-radius: 50%;
+    border: 1.5em solid black;
+    max-width: 25%;
+    margin: 3em 0.5%;
+    
+}
