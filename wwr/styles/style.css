@@ -47,6 +47,8 @@ main section {
 }
 body {
     background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: var(--primary-color);
@@ -57,17 +59,26 @@ nav a:hover {
 }
 .msg {
     background-color: var(--accent1-color);
+    line-height: 1.5em;
+    padding: 35px
 }
 footer {
     background-color: var(--primary-color);
     color: var(--paragraph-color-on-white);
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 nav a {
     text-align: center;
     color: var(--nav-link-color);
     text-decoration: none;
+    padding: 35px;
 }
-.home-title,
+.home-title {
+    font-size: 2em;
+    color: var(--headline-color-on-color);
+    margin-top: 10px;
+}
 h4 {
     font-size: 2em;
     color: var(--headline-color-on-color);
@@ -76,6 +87,9 @@ h4 {
     font-size: 18px;
     color: var(--nav-link-color);
     text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
     background-color: var(--nav-background-color);
 }
 .book:hover, .join:hover {
@@ -88,6 +102,7 @@ h4 {
 .msg p {
     font-size: 0.8em;
     color: var(--headline-color-on-color);
+    padding-bottom: 15px;
 }
 footer a {
     color: var(--nav-link-color);
@@ -96,7 +111,10 @@ footer a {
 footer a:hover {
     color: var(--nav-hover-link-color);
 }
-.icon,
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
 .logo {
     width:80px;
 }
@@ -108,4 +126,23 @@ footer p {
 }
 footer p a:hover {
     text-decoration: underline;
+}
+h2 {
+    margin: 0;
+}
+#logo_link {
+    padding-top: 5px;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid var(--accent2-color);
+}
+
+main section img {
+    box-sizing: border-box;
 }
