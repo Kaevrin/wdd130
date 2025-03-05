@@ -1,0 +1,31 @@
+#header-content {
+ display: flex;
+ max-width: 1600px;
+ margin: auto;
+ background-color: blanchedalmond;
+}
+
+#logo {
+    display: flex;
+}
+#shopping-cart {
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: auto;
+    padding: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: #000;
+    border: 2px solid rgb(96 139 168);
+    border-radius: 5px;
+
+}
+body { 
+    margin: auto;
+    max-width: 1600px;
+    background-color: white;
+}
+main {
+    background-color: beige;
+}
