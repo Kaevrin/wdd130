@@ -70,6 +70,7 @@ footer {
     display:flex;
     justify-content:space-around;
     align-items: center;
+
 }
 nav a {
     text-align: center;
@@ -220,7 +221,52 @@ nav {
     opacity: 0.6;
     transform: scale(1.1);
 }
-
+#formcontainer {
+    margin: 50px auto;
+    width: 300px;
+}
+label {
+    color: var(--headline-color-on-color);
+}
+#formcontainer h1 {
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+}
+form {
+    display: inline-block;
+    padding: 1em;
+    border: 1px solid var(--accent2-color);
+    border-radius: 1em;
+    background-color: var(--accent2-color);
+}
+input,textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid var(--accent1-color);
+}
+input:focus,textarea:focus {
+    outline-style: solid;
+    outline-color: var(--nav-background-color);
+}
+.button {
+    padding-left: 90px;
+}
+button {
+    margin-left: 0.5em;
+}
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5em;
+    display: none;
+}
+.moveDown {
+    margin-top: 3em;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {

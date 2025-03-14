@@ -3,10 +3,13 @@
  max-width: 1600px;
  margin: auto;
  background-color: blanchedalmond;
+ padding: 10px;
 }
 
 #logo {
     display: flex;
+    margin-left: 25px;
+    width: 200px;
 }
 #shopping-cart {
     max-width: 50px;
@@ -14,12 +17,27 @@
     margin-left: auto;
     padding: 10px;
 }
+nav {
+    display: flex;
+    font-size: 45px;
+    height: 100%;
+    margin: auto auto;
+}
 nav a {
+
     text-decoration: none;
     color: #000;
     border: 2px solid rgb(96 139 168);
-    border-radius: 5px;
+    background-color: rgb(96 139 168);
+    flex: 1 1 33.33%;
+    text-align: center;
+    min-width: 250px;
+    white-space: nowrap;
+    text-align: center;
 
+}
+nav a:hover {
+    background-color: blanchedalmond;
 }
 body { 
     margin: auto;
@@ -28,4 +46,32 @@ body {
 }
 main {
     background-color: beige;
+}
+
+#product-gallery {
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.products {
+    flex: 1 1 calc(50% - 10px);
+    box-sizing: border-box;
+    border-radius: 35px;
+    overflow: hidden;
+    padding: 25px;
+}
+.productimg {
+    width: 100%;
+
+}
+h1 {
+    font-size: 50px;
+}
+p {
+    font-size: 35px;
+}
+img {
+    width: 100%;
 }
