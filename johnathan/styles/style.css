@@ -80,7 +80,6 @@ nav a:hover {
 #footer {
     background-color: var(--accent2-color);
     display: flex;
-    justify-items: space-between;
     align-items: center;
     padding: 30px;
     gap: 20px;
