@@ -1,3 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Spline+Sans:wght@300..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+:root {
+  --primary-color: #F5E0B7   ;
+  --secondary-color: #FF5630 ;
+  --accent1-color: #D6BA73;
+  --accent2-color: #8BBF9F;
+
+  --heading-font: "Afacad", "Funnel Sans", "Outfit";
+  --paragraph-font: "Source Sans 3", "Spline Sans", "Yanone Kaffeesatz";
+
+  --headline-color-on-white: black;  
+  --headline-color-on-color: #ffffff; 
+  --paragraph-color-on-white: black;
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: #FF5630;
+  --nav-link-color: #396E94;
+  --nav-background-color: #F5E0B7;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #FF5630;
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    padding: 1em;
+    font-size: 1.3em;
+  }
+body {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--accent1-color);
+}
 #content {
-    width: 1600px;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    background-color: var(--paragraph-background-color);
+    padding: 30px;
+    width: 100%;
+    max-width: 1600px;
+    justify-content: space-between;
+    min-width: 300px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+#header {
+    padding: 10px;
+    box-sizing: border-box;
+    background: var(--accent2-color);
+    width: 100%;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+nav a {
+    font-family: var(--heading-font);
+    text-align: center;
+    text-decoration: none;
+    color: var(--nav-link-color);
+    width: 100%;
+    font-size: 3em;
+}
+nav a:hover {
+    background-color: var(--accent1-color);
+    color: var(--headline-color-on-color);
+}
+
+#footer {
+    background-color: var(--accent2-color);
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%
+}
+.textblock {
+    width: 48%;
+}
+.contentimage {
+    width: 48%;
+    object-fit: cover;
+}
+#soclinks {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+.siteinfo {
+    flex-grow: 1;
+    gap: 10px;
+    width: 30%;
+}
+.siteinfo, #soclinks {
+    flex-grow: 1;
+    text-align: center;
+    width: 30%;
 }
