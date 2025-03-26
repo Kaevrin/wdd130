@@ -3,18 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hover button test</title>
+    <title>Hover & Click Dropdown</title>
     <link rel="stylesheet" href="hoverbutton.css">
-    <script src="hoverbutton.js"></script> 
+    <script defer src="hoverbutton.js"></script> 
 </head>
 <body>
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+    <div class="dropdown" id="dropdown1">
+        <span onclick="myFunction('dropdown1')" class="droptxt">Dropdown 1</span>
+        <div class="dropdown-content">
+          <p>vet</p>
+          <p>vet2</p>
+          <p>vet3</p>
         </div>
-      </div> 
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div class="dropdown" id="dropdown2">
+        <span onclick="myFunction('dropdown2')" class="droptxt">Dropdown 2</span>
+        <div class="dropdown-content">
+          <p>test21</p>
+          <p>test22</p>
+          <p>test23</p>
+        </div>
+    </div> 
+    <p></p>
+    <p></p>
+    <p></p>
+    <div class="dropdown" id="dropdown3">
+        <span onclick="myFunction('dropdown3')" class="droptxt">Dropdown 3</span>
+        <div class="dropdown-content">
+          <p>apple</p>
+          <p>orange</p>
+          <p>banana</p>
+        </div>
+    </div>  
 </body>
 </html>
