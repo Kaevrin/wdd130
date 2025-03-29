@@ -84,6 +84,7 @@ nav a:hover {
     padding: 30px;
     gap: 20px;
     flex-wrap: wrap;
+    height: 100px;
 }
 #logo {
     display: block;
@@ -113,4 +114,50 @@ nav a:hover {
     flex-grow: 1;
     text-align: center;
     width: 30%;
+}
+/* TIMELINE CSS */
+.timeline {
+    position: relative;
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+}
+.container {
+    padding: 10px 50px;
+    position: relative;
+    width: 100%;
+    left: 0;
+    margin-left: -12%;
+
+}
+.timeline-box {
+    padding: 20px 30px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 6px;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    right: 0%;
+    margin-right: -3px;
+    z-index: 1;
+}
+.box-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom:  15px solid transparent;
+    border-left: 50px solid #fff;
+    right: -50px;
+}
+.text-container {
+    max-width: 45%;
 }
