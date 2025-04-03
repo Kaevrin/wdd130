@@ -24,13 +24,14 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--headline-color-on-white);
+    font-size: 2.5em;
 }
 
 p {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color-on-white);
     padding: 1em;
-    font-size: 1.3em;
+    font-size: 1.9em;
   }
 body {
     max-width: 1600px;
@@ -49,7 +50,8 @@ body {
     justify-content: space-between;
     min-width: 300px;
     flex-grow: 1;
-    flex-shrink: 0;
+    flex-shrink: 1;
+    gap: 3%;
 }
 
 #header {
@@ -93,11 +95,18 @@ nav a:hover {
     width: 80%
 }
 .textblock {
-    width: 48%;
+    flex: 1;
+    max-width: 100%;
 }
 .contentimage {
-    width: 48%;
-    object-fit: cover;
+    object-fit:contain;
+    flex: 1;
+    max-width: 600px;
+    flex-wrap: wrap;
+    border-radius: 1em;
+    min-width: 700px;
+    width: 100%;
+
 }
 #soclinks {
     display: flex;
@@ -132,7 +141,7 @@ nav a:hover {
 }
 .timeline-box {
     padding: 20px 30px;
-    background-color: #fff;
+    background-color: var(--accent2-color);
     position: relative;
     border-radius: 6px;
 }
@@ -141,7 +150,7 @@ nav a:hover {
     position: absolute;
     width: 6px;
     height: 100%;
-    background: #fff;
+    background: var(--accent2-color);
     top: 0;
     right: 0%;
     margin-right: -3px;
@@ -155,9 +164,10 @@ nav a:hover {
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom:  15px solid transparent;
-    border-left: 50px solid #fff;
+    border-left: 50px solid var(--accent2-color);
     right: -50px;
 }
 .text-container {
     max-width: 45%;
+    min-width: 40%;
 }
