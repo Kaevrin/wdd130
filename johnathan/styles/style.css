@@ -13,7 +13,7 @@
   --headline-color-on-color: #ffffff; 
   --paragraph-color-on-white: black;
   --paragraph-color-on-color: white;
-  --paragraph-background-color: #FF5630;
+  --paragraph-background-color: #F5E0B7;
   --nav-link-color: #396E94;
   --nav-background-color: #F5E0B7;
   --nav-hover-link-color: white;
@@ -141,7 +141,7 @@ nav a:hover {
 }
 .timeline-box {
     padding: 20px 30px;
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
     position: relative;
     border-radius: 6px;
 }
@@ -150,7 +150,7 @@ nav a:hover {
     position: absolute;
     width: 6px;
     height: 100%;
-    background: var(--accent2-color);
+    background: var(--secondary-color);
     top: 0;
     right: 0%;
     margin-right: -3px;
@@ -164,7 +164,7 @@ nav a:hover {
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom:  15px solid transparent;
-    border-left: 50px solid var(--accent2-color);
+    border-left: 50px solid var(--secondary-color);
     right: -50px;
 }
 .text-container {
