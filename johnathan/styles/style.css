@@ -144,6 +144,8 @@ nav a:hover {
     background-color: var(--secondary-color);
     position: relative;
     border-radius: 6px;
+    margin-left: auto;
+    width: 600px;
 }
 .timeline::after {
     content: '';
@@ -152,7 +154,7 @@ nav a:hover {
     height: 100%;
     background: var(--secondary-color);
     top: 0;
-    right: 0%;
+    right: 0;
     margin-right: -3px;
     z-index: 1;
 }
@@ -165,7 +167,7 @@ nav a:hover {
     border-top: 15px solid transparent;
     border-bottom:  15px solid transparent;
     border-left: 50px solid var(--secondary-color);
-    right: -50px;
+    right: -49px;
 }
 .text-container {
     max-width: 45%;
