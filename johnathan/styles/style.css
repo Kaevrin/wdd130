@@ -96,24 +96,26 @@ nav a:hover {
     width: 80%
 }
 .textblock {
-    flex: 1;
-    max-width: 100%;
+    flex: 0 1 calc(45%);
+    width: 100%;
+    height: auto;
 }
 .contentimage {
-    object-fit:contain;
+    object-fit: contain;
+    display: block;
     flex: 1;
-    max-width: 600px;
     flex-wrap: wrap;
     border-radius: 1em;
-    min-width: 700px;
+    min-width: 600px;
     width: 100%;
-
+    border: 0.35em solid var(--nav-hover-background-color);
+    margin: 0;
+    padding: 0;
 }
 #soclinks {
     display: flex;
     justify-content: center;
     gap: 10px;
-
 }
 .siteinfo {
     flex-grow: 1;
@@ -128,8 +130,7 @@ nav a:hover {
 /* TIMELINE CSS */
 .timeline {
     position: relative;
-    width: 50%;
-    padding: 10px;
+    width: 48%;
     margin: 0 auto;
 }
 .container {
@@ -137,7 +138,7 @@ nav a:hover {
     position: relative;
     width: 100%;
     left: 0;
-    margin-left: -12%;
+    margin-left: -100px;
 
 }
 .timeline-box {
@@ -178,6 +179,9 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 50%;
+    height: 50%;
+
 }
 #footerlink {
     font-family: var(--heading-font);
